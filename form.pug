@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title じゃんけん
+  body 
+    h1 じゃんけんぽん
+    form(method="post" action="/kyuukyokuselect/janken")
+      span 名前:
+      input(type="text" name="name")
+      input(type="radio" name="janken" value="グー")
+      span グー
+      input(type="radio" name="janken" value="チョキ")
+      span チョキ
+      input(type="radio" name="janken" value="パー")
+      span パー
+      button(type="submit") ポンッ
